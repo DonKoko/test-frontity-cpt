@@ -31,6 +31,18 @@ const settings = {
       state: {
         source: {
           api: "https://api.koenighaus-heizsysteme.de/wp-json",
+          params: {
+            per_page: 9
+          },
+          homepage: "/home/",
+          postsPage: "/blog/",
+          postTypes: [
+            {
+              type: "product",
+              endpoint: "product",
+              archive: "/webshop",
+            },
+          ],
         },
       },
     },
