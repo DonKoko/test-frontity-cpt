@@ -21,6 +21,11 @@ const Nav = ({ state }) => (
         </NavItem>
       );
     })}
+    <NavItem key={name}>
+      <Link link={"/p-serie"}>
+        P-serie
+      </Link>
+    </NavItem>
   </NavContainer>
 );
 
